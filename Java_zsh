@@ -1,0 +1,14 @@
+# Java
+export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
+export JAVA_HOME="/usr/local/opt/openjdk@11"
+# export JAVA_HOME="/usr/local/opt/openjdk"
+[[ -d $JAVA_HOME ]] && PATH="$JAVA_HOME/bin:$PATH"
+# maven
+M2="/usr/local/opt/maven@3.5"
+# M2="/usr/local/opt/maven"
+if [ -d "$M2" ]; then
+    export M2_HOME="$M2/libexec"
+    PATH="$M2/bin:$PATH"
+fi
+
+export PATH=".:$PATH"
