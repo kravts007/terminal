@@ -1,3 +1,6 @@
+alias zreload='exec zsh'
+alias n='nnn -deU'
+
 # Java
 export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
 export JAVA_HOME="/usr/local/opt/openjdk@11"
